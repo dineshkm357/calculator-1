@@ -15,10 +15,10 @@ const BillDetails = ({ products, customerName, totalAmount, gstRate, gstAmount }
             <h4 className="text-sm font-semibold mb-2 text-center">Thana road Khukhundoo(Near Durga Mandir)<br />Mob.No- 7800352942</h4>
             <p className="text-center"><strong>Date:</strong> {formattedDate}</p>
             <h1>_________________________________________________</h1>
-            <p><strong>Customer Name:</strong> {customerName}</p>
+            <p><strong>Customer Name:__</strong> {customerName}</p>
             {products.map((product, index) => (
                 <div key={index}>
-                    <p><strong>Item Name:___________</strong> {product.itemName}</p>
+                    <p><strong>Item Name:_____________</strong> {product.itemName}</p>
                     <p><strong>Weight (grams):__________</strong> {product.weight}</p>
                     <p><strong>Rate per Gram:___________</strong> {product.ratePerGram}</p>
                     <p><strong>Charge Amount:__________</strong> {product.chargeAmount}</p>
