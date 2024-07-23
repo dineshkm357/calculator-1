@@ -15,19 +15,19 @@ const BillDetails = ({ products, customerName, totalAmount, gstRate, gstAmount }
             <h4 className="text-sm font-semibold mb-2 text-center">Thana road Khukhundoo(Near Durga Mandir)<br />Mob.No- 7800352942</h4>
             <p className="text-center"><strong>Date:</strong> {formattedDate}</p>
             <h1>_________________________________________________</h1>
-            <p><strong>Customer Name:__</strong> {customerName}</p>
+            <p><strong>Customer Name:</strong> {customerName}</p>
             {products.map((product, index) => (
                 <div key={index}>
-                    <p><strong>Item Name:_____________</strong> {product.itemName}</p>
-                    <p><strong>Weight (grams):__________</strong> {product.weight}</p>
-                    <p><strong>Rate per Gram:___________</strong> {product.ratePerGram}</p>
-                    <p><strong>Charge Amount:__________</strong> {product.chargeAmount}</p>
+                    <p><strong>Item Name:_________</strong> {product.itemName}</p>
+                    <p><strong>Weight (grams):____</strong> {product.weight}</p>
+                    <p><strong>Rate per Gram:______</strong> {product.ratePerGram}</p>
+                    <p><strong>Charge Amount:_____</strong> {product.chargeAmount}</p>
                     <p><strong>Total Price:__________</strong> {product.totalPrice}</p>
                 </div>
             ))}
-            <p><strong>GST ({(gstRate * 100).toFixed(2)}%):________</strong> {gstAmount.toFixed(2)}</p>
-            <p><strong>Total Amount:________</strong> {totalAmount.toFixed(2)}</p>
-            <button onClick={handlePrint} className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Print</button>
+            <p><strong>GST ({(gstRate * 100).toFixed(2)}%)_______:</strong> {gstAmount.toFixed(2)}</p>
+            <p><strong>Total Amount:_______</strong> {totalAmount.toFixed(2)}</p>
+            <button onClick={handlePrint} className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Print</button>---Thank you for shopping--
         </div>
     );
 };
