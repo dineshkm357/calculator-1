@@ -18,15 +18,15 @@ const BillDetails = ({ products, customerName, totalAmount, gstRate, gstAmount }
             <p><strong>Customer Name:</strong> {customerName}</p>
             {products.map((product, index) => (
                 <div key={index}>
-                    <p><strong>Item Name:</strong> {product.itemName}</p>
-                    <p><strong>Weight (grams):</strong> {product.weight}</p>
-                    <p><strong>Rate per Gram:</strong> {product.ratePerGram}</p>
-                    <p><strong>Charge Amount:</strong> {product.chargeAmount}</p>
-                    <p><strong>Total Price:</strong> {product.totalPrice}</p>
+                    <p><strong>Item Name:___________</strong> {product.itemName}</p>
+                    <p><strong>Weight (grams):__________</strong> {product.weight}</p>
+                    <p><strong>Rate per Gram:___________</strong> {product.ratePerGram}</p>
+                    <p><strong>Charge Amount:__________</strong> {product.chargeAmount}</p>
+                    <p><strong>Total Price:__________</strong> {product.totalPrice}</p>
                 </div>
             ))}
-            <p><strong>GST ({(gstRate * 100).toFixed(2)}%):</strong> {gstAmount.toFixed(2)}</p>
-            <p><strong>Total Amount:</strong> {totalAmount.toFixed(2)}</p>
+            <p><strong>GST ({(gstRate * 100).toFixed(2)}%):________</strong> {gstAmount.toFixed(2)}</p>
+            <p><strong>Total Amount:________</strong> {totalAmount.toFixed(2)}</p>
             <button onClick={handlePrint} className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Print</button>
         </div>
     );
