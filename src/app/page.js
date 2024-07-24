@@ -4,7 +4,7 @@ import Calculater from './calculater_/page';
 export default function Home() {
   return (
    <>
-<Calculaterrrrrrrrr/>
+<Calculaterrrrrrrr/>
    </>
   );
 }
