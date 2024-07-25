@@ -22,6 +22,9 @@ const BillCard = ({
       Thana road Khukhundoo, Deoria (Near Durga Mandir)<br />
       Mob. No- 9565254228
     </h4>
+     <h4 className="text-sm font-semibold mb-4 text-center"
+    सोन व चांदी के आभूषणों के निर्माता व विक्रेता
+    </h4>
     <p className="text-center mb-6"><strong>Date:</strong> {formattedDate}</p>
     <div className=" flex justify-between ml-0 mb-4">
       <div>
