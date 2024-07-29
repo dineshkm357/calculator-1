@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-undef */
 "use client";
 import React, { useState, useEffect } from 'react';
-
+import { Card } from '@mui/material';
 const BillCard = ({
   customerName,
   customerAddress,
@@ -26,19 +26,20 @@ const BillCard = ({
     
     सोन व चांदी के आभूषणों के निर्माता व विक्रेता
     </h4>
-    <p className="text-center mb-6"><strong>Date:</strong> {formattedDate}</p>
     <div className=" flex justify-between ml-0 mb-4">
       <div>
       <p><strong>Customer Name:-</strong> {customerName}</p>
       <p><strong>Customer Address:-</strong> {customerAddress}</p>
       <p><strong>Customer Mob:-</strong> {customerMob}</p>
       </div>
-      // <div>
-      // <p><strong>Salesman</strong> </p>
-      // <p><strong>GSTIN:- 9999999999</strong> </p>
-      // <p><strong>PAN:-100000000</strong> </p>
-      
-      // </div>
+      <div>
+      <p className="text-center mb-6"><strong>Date:</strong> {formattedDate}</p>
+
+      {/* <p><strong>Salesman</strong> </p>
+      <p><strong>GSTIN:- 9999999999</strong> </p>
+      <p><strong>PAN:-100000000</strong> </p>
+       */}
+      </div>
     </div>
 
     <table className="w-full mb-4 border-collapse border border-gray-200">
@@ -134,7 +135,7 @@ const ItemDetailsPage = () => {
   const [weight, setWeight] = useState('');
   const [ratePerGram, setRatePerGram] = useState('');
   const [chargeAmount, setChargeAmount] = useState('');
-  const [discount, setDiscount] = useState(0);
+  const [discount, setDiscount] = useState('');
   const [productType, setProductType] = useState('');
   const [products, setProducts] = useState([]);
   const [totalAmount, setTotalAmount] = useState(0);
@@ -144,9 +145,9 @@ const ItemDetailsPage = () => {
   const [cgstAmount, setCgstAmount] = useState(0);
   const [showBill, setShowBill] = useState(false);
   const [chargeType, setChargeType] = useState('');
-  const [sgstRate, setSgstRate] = useState(1.5); // SGST rate in percentage
-  const [cgstRate, setCgstRate] = useState(1.5); // CGST rate in percentage
-  const [paidAmount, setPaidAmount] = useState(0); // Paid amount
+  const [sgstRate, setSgstRate] = useState(1.5); 
+  const [cgstRate, setCgstRate] = useState(1.5); 
+  const [paidAmount, setPaidAmount] = useState(0); 
   const [remainingBalance, setRemainingBalance] = useState(0); 
 
   const addProduct = () => {
@@ -209,10 +210,12 @@ const ItemDetailsPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <Card>
+    <div className="flex flex-col items-center start-left min-h-screen bg-gray-100">
       {!showBill ? (
-        <div className="w-full max-w-4xl p-6 bg-white shadow-md rounded-lg">
+        <div className=" w-full max-w-4xl p-6 bg-white shadow-md rounded-lg">
           <h1 className="text-2xl font-semibold mb-4">Item Details</h1>
+          <td className="border border-gray-300 px-4 py-2 font-semibold">{totalAmount.toFixed(2)}</td>
 
           <div className="mb-4">
             <label className="block text-sm font-medium mb-1">Customer Name</label>
@@ -395,6 +398,7 @@ const ItemDetailsPage = () => {
         />
       )}
     </div>
+    </Card>
   );
 };
 
