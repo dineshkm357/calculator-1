@@ -134,7 +134,7 @@ const ItemDetailsPage = () => {
   const [weight, setWeight] = useState('');
   const [ratePerGram, setRatePerGram] = useState('');
   const [chargeAmount, setChargeAmount] = useState('');
-  const [discount, setDiscount] = useState('');
+  const [discount, setDiscount] = useState(0);
   const [productType, setProductType] = useState('');
   const [products, setProducts] = useState([]);
   const [totalAmount, setTotalAmount] = useState(0);
@@ -147,7 +147,7 @@ const ItemDetailsPage = () => {
   const [sgstRate, setSgstRate] = useState(1.5); // SGST rate in percentage
   const [cgstRate, setCgstRate] = useState(1.5); // CGST rate in percentage
   const [paidAmount, setPaidAmount] = useState(0); // Paid amount
-  const [remainingBalance, setRemainingBalance] = useState(0); // Remaining balance
+  const [remainingBalance, setRemainingBalance] = useState(0); 
 
   const addProduct = () => {
     const weightFloat = parseFloat(weight);
