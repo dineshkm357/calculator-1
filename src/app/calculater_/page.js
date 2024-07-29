@@ -215,7 +215,6 @@ const ItemDetailsPage = () => {
       {!showBill ? (
         <div className=" w-full max-w-4xl p-6 bg-white shadow-md rounded-lg">
           <h1 className="text-2xl font-semibold mb-4">Item Details</h1>
-          <td className="border border-gray-300 px-4 py-2 font-semibold">{totalAmount.toFixed(2)}</td>
 
           <div className="mb-4">
             <label className="block text-sm font-medium mb-1">Customer Name</label>
