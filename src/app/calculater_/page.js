@@ -20,7 +20,7 @@ const BillCard = ({
     <h1 className="text-lg font-semibold mb-4 text-center">AJAY JEWELLERS</h1>
     <h4 className="text-sm font-semibold mb-4 text-center">
       Thana road Khukhundoo, Deoria (Near Durga Mandir)<br />
-      Mob. No- 7800352942
+      Mob. No- 7007052900
     </h4>
     <h4 className="text-sm font-semibold mb-4 text-center">
     
@@ -33,12 +33,12 @@ const BillCard = ({
       <p><strong>Customer Address:-</strong> {customerAddress}</p>
       <p><strong>Customer Mob:-</strong> {customerMob}</p>
       </div>
-      <div>
-      <p><strong>Salesman</strong> </p>
-      <p><strong>GSTIN:- 9999999999</strong> </p>
-      <p><strong>PAN:-100000000</strong> </p>
+      // <div>
+      // <p><strong>Salesman</strong> </p>
+      // <p><strong>GSTIN:- 9999999999</strong> </p>
+      // <p><strong>PAN:-100000000</strong> </p>
       
-      </div>
+      // </div>
     </div>
 
     <table className="w-full mb-4 border-collapse border border-gray-200">
