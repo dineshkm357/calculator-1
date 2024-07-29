@@ -135,7 +135,7 @@ const ItemDetailsPage = () => {
   const [weight, setWeight] = useState('');
   const [ratePerGram, setRatePerGram] = useState('');
   const [chargeAmount, setChargeAmount] = useState('');
-  const [discount, setDiscount] = useState(0);
+  const [discount, setDiscount] = useState('');
   const [productType, setProductType] = useState('');
   const [products, setProducts] = useState([]);
   const [totalAmount, setTotalAmount] = useState(0);
