@@ -18,16 +18,16 @@ const BillDetails = ({ products, customerName, totalAmount, gstRate, gstAmount }
             <p><strong>Customer Name:</strong> {customerName}</p>
             {products.map((product, index) => (
                 <div key={index}>
-                    <p><strong>Item Name:</strong> {product.itemName}</p>
-                    <p><strong>Weight (grams):</strong> {product.weight}</p>
-                    <p><strong>Rate per Gram:</strong> {product.ratePerGram}</p>
-                    <p><strong>Charge Amount:</strong> {product.chargeAmount}</p>
-                    <p><strong>Total Price:</strong> {product.totalPrice}</p>
+                    <p><strong>Item Name:_________</strong> {product.itemName}</p>
+                    <p><strong>Weight (grams):____</strong> {product.weight}</p>
+                    <p><strong>Rate per Gram:______</strong> {product.ratePerGram}</p>
+                    <p><strong>Charge Amount:_____</strong> {product.chargeAmount}</p>
+                    <p><strong>Total Price:__________</strong> {product.totalPrice}</p>
                 </div>
             ))}
-            <p><strong>GST ({(gstRate * 100).toFixed(2)}%):</strong> {gstAmount.toFixed(2)}</p>
-            <p><strong>Total Amount:</strong> {totalAmount.toFixed(2)}</p>
-            <button onClick={handlePrint} className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Print</button>
+            <p><strong>GST ({(gstRate * 100).toFixed(2)}%)_______:</strong> {gstAmount.toFixed(2)}</p>
+            <p><strong>Total Amount:_______</strong> {totalAmount.toFixed(2)}</p>
+            <button onClick={handlePrint} className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Print</button>---Thank you for shopping--
         </div>
     );
 };
@@ -71,7 +71,7 @@ const ItemDetailsPage = () => {
 
     const calculateTotal = () => {
         const total = products.reduce((sum, product) => sum + parseFloat(product.totalPrice), 0);
-        const gst = total * gstRate;
+        const gst = weightFloat * ratePerGram * gstRate;
         setTotalAmount(total+gst);
         setGstAmount(gst);
     };

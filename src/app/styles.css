@@ -1,0 +1,36 @@
+/* styles.css */
+@media print {
+    @page {
+      size: A4;
+      margin: 0.5cm; /* Adjust margins as needed */
+    }
+  
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .print-container {
+      display: block;
+      width: 100%;
+      page-break-after: avoid; /* Prevents breaking the page within the container */
+    }
+  
+    .MuiDataGrid-root {
+      height: auto !important;
+    }
+  
+    .MuiDataGrid-main {
+      overflow: visible !important;
+    }
+  
+    /* Ensure columns are not cut off */
+    .MuiDataGrid-columnHeaders {
+      display: table-header-group;
+    }
+  
+    .MuiDataGrid-footerContainer {
+      display: none; /* Hide the footer in print */
+    }
+  }
+  
