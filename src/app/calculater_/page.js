@@ -11,8 +11,8 @@ const BillDetails = ({ products, customerName, totalAmount, gstRate, gstAmount }
 
     return (
         <div className="bg-white p-4 rounded-lg shadow-md">
-            <h1 className="text-lg font-semibold mb-2 text-center">AJAY JEWELLERS</h1>
-            <h4 className="text-sm font-semibold mb-2 text-center">Thana road Khukhundoo(Near Durga Mandir)<br />Mob.No- 7800352942</h4>
+            {/* <h1 className="text-lg font-semibold mb-2 text-center">AJAY JEWELLERS</h1> */}
+            {/* <h4 className="text-sm font-semibold mb-2 text-center">Thana road Khukhundoo(Near Durga Mandir)<br />Mob.No- 7800352942</h4> */}
             <p className="text-center"><strong>Date:</strong> {formattedDate}</p>
             <h1>_________________________________________________</h1>
             <p><strong>Customer Name:</strong> {customerName}</p>
