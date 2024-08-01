@@ -5,6 +5,7 @@ import ItemDetails from './itemDetails/page';
 export default function Home() {
   return (
     <>
+      <Calculater/>
       <ItemDetails />
     </>
   );
