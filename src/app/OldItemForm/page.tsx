@@ -1,4 +1,4 @@
-// src/components/OldItemForm.tsx
+"use client";
 import React, { useState, useEffect } from 'react';
 
 const OldItemForm: React.FC<{ closeModal: () => void; addOldItem: (item: any) => void }> = ({ closeModal, addOldItem }) => {
