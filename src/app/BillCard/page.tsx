@@ -22,7 +22,7 @@ const BillCard = ({
 
   return (
     <div className="w-full max-w-4xl p-6 bg-white shadow-md rounded-lg">
-      <h1 className="text-2xl font-semibold mb-4">Bill Details</h1>
+      <h1 className="text-2xl font-semibold mb-4">Bill_____ Details</h1>
       <div className=" flex justify-between ml-0 mb-4">
       <div>
       <p><strong>Customer Name:-</strong> {customerName}</p>
